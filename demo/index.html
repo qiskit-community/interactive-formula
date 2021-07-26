@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Interactive Formula</title>
+  <meta name="description" content="A simple interactive formula component that helps users understand parts of a complex math equation.">
+  <meta name="author" content="Randy Tolentino">
+  
+  <!-- Interactive Formula - MathJax Library -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+
+<link rel="stylesheet" href="/demo/css/main.css">
+
+<!-- Interactive Formula styles -->
+<link rel="stylesheet" href="/dist/styles/formula.css">
+
+  <!-- Interactive Formula scripts  -->
+  <script src="/dist/scripts/formula.js"></script>
+</head>
+
+<body>
+  <section class="demo">
+    <h1>Interactive Formula</h1>
+    <p>Hover over <span class="accent">highlighted</span> parts of the equation to reveal more information.</p>
+    <div class="formula">
+      $$ \cssId{test_one}{x} = {-b \pm \sqrt { b^2 - \cssId{test_two}{4ac} } \over \cssId{test_three}{2a}}. $$
+    </div>
+  </section>
+</body>
+</html>
